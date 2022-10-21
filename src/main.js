@@ -11,12 +11,12 @@ let showFilms='';
   for (let i=0; i<data.films.length; i++){
      showFilms+= `
      <ul>
-      <li>${data.films[i].title}</li>
-      <li>${data.films[i].description}</li>
-      <li>${data.films[i].director}</li>
-      <li>${data.films[i].producer}</li>
+      <li><h3>${data.films[i].title}</h3></li>
+     
+  
+      
       <li>${data.films[i].release_date}</li>
-      <li>${data.films[i].rt_score}</li>
+      
       <li><img src="${data.films[i].poster}"</li><br><br>
      
      </ul>
