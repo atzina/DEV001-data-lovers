@@ -8,8 +8,7 @@ flex-wrap:nowrap;
 .textoybotones{
     display: flex;
 flex-direction: column;
-height: 600px;
-padding: 100px;
+padding: 80px;
 min-width: 50px;
 max-width: 1000px;
 }
@@ -19,8 +18,10 @@ max-width: 1000px;
 }
 
 .imagen{
-    display:flex;
-    float: right;
+width: 30%;
+height: auto;
+object-fit:scale-down;
+padding: 50px;
 
 
 
@@ -34,7 +35,7 @@ h1{
 font-family: 'Inter';
 font-style:normal;
 font-weight: 800px;
-font-size: 48px;
+font-size: 40px;
 line-height: 50px;
 /* or 136% */
 
@@ -57,7 +58,8 @@ font-family: 'Inter';
 font-style: normal;
 font-weight: 400;
 font-size: 18px;
-line-height: 32px;
+line-height: 20px;
+text-align: justify;
 /* or 178% */
 
 
@@ -73,14 +75,13 @@ color: #18191F;
 flex-direction:row;
 flex: 3;
 flex-wrap: wrap;
-justify-content:center;
-padding: 12px 32px;
+justify-content:flex-start;
 gap: 10px;
 
 width: 800px;
-height: 35px;
+
 align-items:center ;
-order:3;
+
 
 
 /* Brand / Purple */
@@ -89,6 +90,10 @@ order:3;
 .myBoton{
     background: #8C30F5;
 border-radius: 6px;
+width: 188px;
+height: 54px;
+left: 16px;
+top: 186px;
 
 
 /* Inside auto layout */
@@ -105,26 +110,30 @@ color: #FFFFFF;
 main{
     display:flex;
     flex-direction: row;
+    
+
 }
 .show{
     display: flex;
 
 flex-wrap: wrap;
-justify-content: baseline;
 align-items:flex-start;
 width: 100%;
+justify-content: space-evenly;
+background-image: url("https://w0.peakpx.com/wallpaper/60/74/HD-wallpaper-studio-ghibli-doodle-anime-black-bw-cat-doodles-totoro-white.jpg") ;
 
 
 }
 ul{
     list-style-type: none;
-    border-radius: 8px;
+    border-radius: 22px;
     border-color:beige;
     border-style:ridge;
     box-shadow: 00 12px 2px rgba(0, 0, 0, 0,2);
     overflow: hidden;
     transition: all 0.25s;
     font-family:'Inter';
+    background-color:  #F1E4FF;
     
 
     
