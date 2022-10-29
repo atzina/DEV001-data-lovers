@@ -8,29 +8,21 @@ flex-wrap:nowrap;
 .textoybotones{
     display: flex;
 flex-direction: column;
-height: 600px;
+flex-grow: 1;
+
 padding: 100px;
 min-width: 50px;
 max-width: 1000px;
 }
-.parrafo{
-    
-    
-}
 
 .imagen{
-    display:flex;
-    float: right;
+    height: auto;
+        object-fit: scale-down;
+        width: 35%;
+    }
 
 
-
-
-}
 h1{
-    
-
-/* Heading/H1 */
-
 font-family: 'Inter';
 font-style:normal;
 font-weight: 800px;
@@ -44,36 +36,25 @@ font-feature-settings: 'salt' on, 'liga' off;
 
 color: #18191F;
 
-
-/* Inside auto layout */
-
 }
+
 p{
-   
-
-/* Lead / Lead 1 */
-
+   flex-wrap: wrap;
 font-family: 'Inter';
 font-style: normal;
 font-weight: 400;
 font-size: 18px;
 line-height: 32px;
-/* or 178% */
-
-
-/* Text / Gray 900 */
-
-color: #18191F;
-
-
+color: #0a0a0a;
 
 }
+
 .botones{
     display: flex;
 flex-direction:row;
 flex: 3;
 flex-wrap: wrap;
-justify-content:center;
+justify-content:flex-start;
 padding: 12px 32px;
 gap: 10px;
 
@@ -135,4 +116,5 @@ ul:hover{
 }
 ul img{
     padding-right: 25px ;
+    border-radius: 10px;
 }
