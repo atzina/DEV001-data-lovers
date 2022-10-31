@@ -8,21 +8,29 @@ flex-wrap:nowrap;
 .textoybotones{
     display: flex;
 flex-direction: column;
-flex-grow: 1;
-
+height: 600px;
 padding: 100px;
 min-width: 50px;
 max-width: 1000px;
 }
+.parrafo{
+    
+    
+}
 
 .imagen{
-    height: auto;
-        object-fit: scale-down;
-        width: 35%;
-    }
+    display:flex;
+    float: right;
 
 
+
+
+}
 h1{
+    
+
+/* Heading/H1 */
+
 font-family: 'Inter';
 font-style:normal;
 font-weight: 800px;
@@ -36,25 +44,36 @@ font-feature-settings: 'salt' on, 'liga' off;
 
 color: #18191F;
 
-}
 
+/* Inside auto layout */
+
+}
 p{
-   flex-wrap: wrap;
+   
+
+/* Lead / Lead 1 */
+
 font-family: 'Inter';
 font-style: normal;
 font-weight: 400;
 font-size: 18px;
 line-height: 32px;
-color: #0a0a0a;
+/* or 178% */
+
+
+/* Text / Gray 900 */
+
+color: #18191F;
+
+
 
 }
-
 .botones{
     display: flex;
 flex-direction:row;
 flex: 3;
 flex-wrap: wrap;
-justify-content:flex-start;
+justify-content:center;
 padding: 12px 32px;
 gap: 10px;
 
@@ -116,5 +135,4 @@ ul:hover{
 }
 ul img{
     padding-right: 25px ;
-    border-radius: 10px;
 }

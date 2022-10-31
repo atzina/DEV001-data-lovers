@@ -24,12 +24,10 @@ export const order = (movies) => {
 
 
 
-// const muvis = data.films
+const muvis = data.films
 
-// export const filteredMuvis = muvis.filter(function (muvis) {
-//     return muvis.director == "Hayao Miyazaki";
-    
-// });
-// //console.log(filteredMuvis);
+export const filteredMuvis = muvis.filter(function (muvis) {
+    return muvis.director == "Hayao Miyazaki";
 
-
+});
+//console.log(filteredMuvis);

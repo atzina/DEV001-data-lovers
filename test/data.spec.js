@@ -12,7 +12,7 @@ describe('quiero testear sort', () => {
 
   it('tiene que ordenar a-z`', () => {
     const nombrePruebas = [
-      {title: "Whisper of the Heart" }, {title: "Pom Poko" }, {title: "Castle in the Sky" }, {title: "My Neighbor Totoro" }
+      { title: "Whisper of the Heart" }, { title: "Pom Poko" }, { title: "Castle in the Sky" }, { title: "My Neighbor Totoro" }
     ]
     const resultado = [{ title: "Castle in the Sky" }, { title: "My Neighbor Totoro" }, { title: "Pom Poko" }, { title: "Whisper of the Heart" }]
     expect(order(nombrePruebas)).toEqual(resultado);
