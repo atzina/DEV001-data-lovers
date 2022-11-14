@@ -1,4 +1,48 @@
+# Animaciones Estudios Ghibli
+## Índice
+
+## 1. Descripción del producto.
+## 2. Sobre el usuario.
+## 3. Objetivos relacionados al usuario.
+## 4. Puntos de intervención que busca el producto.
+## 5. Estado de desarrollo del producto.
+
+## 1. Descripción del producto.
+Se trata de una interfaz que permite al usuario interesado en obtener información acerca de
+todas las películas de Estudio Ghibli. Esta información incluye el poster, título y fecha de
+realización de las películas, así como datos de los directores y personajes, además de
+algunos datos curiosos.
+
+## 2. Sobre el usuario.
+Este producto es útil tanto para usuarios poco conocedores que esperan saber un poco más
+de las producciones del Estudio, así como para los fans que quieren obtener en un mismo
+sitio información más específica de todos los filmes, o datos concretos como años de
+realización o directores.
+
+## 3. Objetivos relacionados al usuario.
+Está pagina hace posible obtener de manera amigable un panorama general de todas las
+producciones de Estudios Ghibli. Busca concentrar datos variados para que el usuario
+interesado pueda reconocer entre gran cantidad de información la que cubre sus intereses, a
+partir de una experiencia sencilla que consiste en explorar botones y visualizar entre la
+información que muestran.
+
+## 4. Puntos de intervención que busca el producto.
+La experiencia busca dar centralidad a las películas, ofreciendo por ello una visibilidad
+sencilla y amigable con usuarios poco conocedores, que en poco tiempo pueden llegar a
+tener una visión más completa de las creaciones del estudio, para así tener alternativas de
+elección sobre la próxima película que quiere ver, o encontrar más características sobre sus
+personajes favoritos.
+
+## 5. Estado de desarrollo del producto.
+Como posibilidad de expansión del proyecto es posible desarrollar las interfaces para
+hacerlas más vistosa y mostrar más datos y estadísticas que pueden interesar tanto a
+usuarios expertos como a los que recién se acercan a saber más sobre los filmes, es decir
+enriquecer la data siempre manteniendo la experiencia amigable.
+
+
+
 # Data Lovers
+
 
 ## Índice
 
