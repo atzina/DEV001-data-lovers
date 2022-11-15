@@ -1,5 +1,5 @@
 import data from './data/ghibli/ghibli.js';
-import {order} from './data.js';
+import {order,filteredMuvis,filtroPersonaje, sumarPersonajes} from './data.js';
 import datacopy from './data/ghibli/ghibli2.js';
 
 
@@ -19,14 +19,15 @@ function show() {
      `
       //console.log(showFilms);
 
-      document.getElementById('basico').innerHTML = showFilms;
+      
    }
+   document.getElementById('basico').innerHTML = showFilms;
 }
 
 
 
-document.getElementById('botonDos').addEventListener('click', ordenar);
-function ordenar() {
+document.getElementById('botonDos').addEventListener('click', showSortMovies);
+function showSortMovies() {
    const pelis = order(datacopy.films);
    let showFilmsOrder = '';
 
@@ -42,27 +43,75 @@ function ordenar() {
 }
 
 
+document.getElementById('director-names').addEventListener('change', filtrar);
+function filtrar(event){
+   const directors=event.target.value;
+   const muvies = filteredMuvis(data.films,directors);
 
-// document.getElementById('botonTres').addEventListener('click', filtrar);
-// function filtrar() {
-//    let showFilmsFiltered = '';
+   console.log(directors, muvies);
+   let showFilmsDr='';
 
-//    for (let i = 0; i < filteredMuvis.length; i++) {
-//       showFilmsFiltered += `
-//      <ul>
-//       <li><h3>${filteredMuvis[i].title}</h3></li>
-//       <li>${filteredMuvis[i].director}</li>
-//       <li><img src="${filteredMuvis[i].poster}"</li><br><br>
-//      </ul>`
-//       //console.log(showFilmsFiltered);
-//       document.getElementById('basico').innerHTML = showFilmsFiltered;
+   muvies.forEach(cadaPeli => {
 
-//    }
-//    //console.log('estaaaas son las filtradas' + showFilmsFiltered);
-// }
+   showFilmsDr += `
+     <ul>
+      <li><h3>${cadaPeli.title}</h3></li>
+      <li><img src="${cadaPeli.poster}"</li><br><br>
+     </ul>
+     `
 
+ })
+ document.getElementById('basico').innerHTML = showFilmsDr;
+}
+ 
+document.getElementById('personajesPorPelicula').addEventListener('change', filtroPersonajes);
+function filtroPersonajes(event){
+   const peliculas = event.target.value;
 
-
-
-
+   const traerPeliculas = filtroPersonaje(data.films,peliculas);
+   console.log(peliculas, traerPeliculas);
   
+   let showPeople = '';
+   traerPeliculas.forEach( cadaPeliFilter =>{
+      return cadaPeliFilter.people.forEach(cadaElemento =>{
+         
+         showPeople += `
+      
+         <ul>
+         <li><h3>${cadaElemento.name}</h3></li>
+         <li><img src="${cadaElemento.img}"</li><br><br>
+         <li><h3>Género:${cadaElemento.gender}</h3></li>
+         <li><h3>Edad:${cadaElemento.age}</h3></li>
+         <li><h3>Especie:${cadaElemento.specie}</h3></li>
+         
+           
+         </ul>
+            `
+      })
+      
+   })
+                             
+document.getElementById('basico').innerHTML = showPeople;
+
+}  
+
+document.getElementById('botonTres').addEventListener('click', estadisticas);
+function estadisticas(){
+   let showStatistics = '';
+   const statistics = sumarPersonajes(data.films);
+   //<li><h3>Aquí encontrarás una estadística simple a cerca de los personajes divididos por su especie, de todas las animaciones de Estuido Ghibli</h3></li>
+ for (const property in statistics){
+   showStatistics += `
+   <ul>
+   
+   <li><h2>${property}: ${statistics[property]}</h2></li>
+   </ul>
+   
+   `
+  
+ }
+
+   
+   document.getElementById('basico').innerHTML = showStatistics;
+   console.log(sumarPersonajes(data.films));
+}
